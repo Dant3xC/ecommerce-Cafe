@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logoCafe</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">logo</a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="images/menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#info">Shopping and payment</a></li>
+                    <li><a href="#Reviews">Reviews</a></li>
+                    <li><a href="#aboutus">About us</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#fin">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <a href="shop.html"><i class="fas fa-search"></i></a>
+                <a href="login.html"><i class="fas fa-user"></i></a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i></a>
+                <a href="carrito.html"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="lema">
+        <div class="lema-text">
+            <p>Roasting passion into every bean</p>
+        </div>
+    </section>
+
+    <section class="shop-section" id="shop">
+        <h2>Shop</h2>
+        <div class="shop-options">
+            <a href="coffee.html" class="shop-link">
+                <div class="shop-item">
+                    <img src="images/coffee-2.jpg" alt="Coffee">
+                    <h3>Coffee</h3>
+                </div>
+            </a>
+            <a href="equipment.html" class="shop-link">
+                <div class="shop-item">
+                    <img src="images/equipment.jpg" alt="Equipment">
+                    <h3>Equipment</h3>
+                </div>
+            </a>
+        </div>
+        <a href="index.html" class="btn-1">Shop all</a>
+
+    </section>
+
+    <section class="info-section" id="info">
+        <h2>Shipping and payment</h2>
+        <div class="info-items">
+            <details>
+                <summary>Payment methods</summary>
+                <p>We accept a variety of payment methods to ensure a secure and convenient shopping experience.
+                    You can pay using major credit and debit cards (Visa, MasterCard, American Express, Discover),
+                    PayPal, Apple Pay, Google Pay, and cryptocurrencies like Bitcoin and Ethereum. We also offer
+                    installment payment options through Klarna and Afterpay for more flexible purchasing.
+                </p>
+                <p>Your payment security is our priority. All transactions are protected with SSL encryption to
+                    safeguard your information. If you need assistance with your payment, our customer service team is
+                    ready to help. Thank you for choosing to shop with us!</p>
+            </details>
+            <details>
+                <summary>Shipping terms</summary>
+                <p>Información detallada sobre la oración 2.</p>
+            </details>
+            <details>
+                <summary>Return policy</summary>
+                <p>Información detallada sobre la oración 3.</p>
+            </details>
+            <details>
+                <summary>Refund policy</summary>
+                <p>Información detallada sobre la oración 4.</p>
+            </details>
+        </div>
+    </section>
+    <section class="reviews" id="Reviews">
+        <h2>Reviews</h2>
+        <div class="slider-container">
+            <div class="slider">
+                <input type="radio" name="slider" id="slide1" checked>
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
+                <div class="slides">
+                    <div class="slide" id="s1">
+                        <p>"The best coffee I've ever tasted! Incredible flavor and aroma."</p>
+                        <span>- John Doe</span>
+                    </div>
+                    <div class="slide" id="s2">
+                        <p>"Roastopia's coffee is simply amazing. I'm a fan for life!"</p>
+                        <span>- Jane Smith</span>
+                    </div>
+                    <div class="slide" id="s3">
+                        <p>"I can't start my day without a cup of Roastopia's coffee. Highly recommended."</p>
+                        <span>- Alex Johnson</span>
+                    </div>
+                </div>
+                <div class="navigation">
+                    <label for="slide1" class="nav"></label>
+                    <label for="slide2" class="nav"></label>
+                    <label for="slide3" class="nav"></label>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="aboutus" id="aboutus">
+        <div class="about-title">
+            <p>About us</p>
+        </div>
+        <div class="about-text">
+            <h3>Roastopia is passionate about the art of coffee roasting.
+                With a history deeply rooted in the coffee Industry, our mission is to bring you the finest
+                coffee experience, one exquisite roast at a time.</h3>
+            <h3>Roasting coffee beans in-house or sourcing freshly roasted beans ensures that
+                customers or coffee lovers can enjoy coffee at its peak flavor and aroma.</h3>
+        </div>
+        <a href="#" class="btn-1">Read more</a>
+    </section>
+    <section class="blog container" id="blog">
+        <h2>Blog</h2>
+        <div class="blog-content">
+            <div class="blog-1">
+                <img src="images/blog1.jpg" alt="">
+                <h3>Coffee with milk: pros and cons </h3>
+                <p>
+                    Coffee with milk is definitely one of the most common requests in coffee shops.
+                    For example, in our coffee shops, cappuccino is most often ordered.
+                </p>
+            </div>
+            <div class="blog-1">
+                <img src="images/blog2.jpg" alt="">
+                <h3>Does Matcha Latte Have Caffeine</h3>
+                <p>
+                    Matcha latte is a relatively new addition to coffee shop menus, and since it first appeared,
+                    this bright green beverage has seen a considerable rise in popularity in a short span of time.
+                </p>
+            </div>
+            <div class="blog-1">
+                <img src="images/blog3.jpg" alt="">
+                <h3>Why is coffee served with water</h3>
+                <p>
+                    A long time ago, servants brought coffee to the Turkish Sultan, and a glass of water was always
+                    placed next to it.
+                    And not at all so that he could quench his thirst, but to check if his drink was poisoned.
+                </p>
+            </div>
+        </div>
+        <a href="#" class="btn-1">Read more</a>
+    </section>
+
+    <footer class="footer" id="fin">
+        <div class="footer-content container">
+            <div class="link">
+                <h3>logo</h3>
+            </div>
+            <div class="link">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#info">Shipping and payment</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#aboutus">About us</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+
+            </div>
+            <div class="link">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="#">+54 3874417144</a></li>
+                    <li><a href="#">+54 1234525677</a></li>
+                    <li><a href="#">dantecruz4@gmail.com</a></li>
+                    <li><a href="#">calle real 1223</a></li>
+                </ul>
+
+            </div>
+            <div class="link">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
