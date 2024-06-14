@@ -298,7 +298,7 @@ details p {
     flex: 0 0 100%;
     box-sizing: border-box;
     padding: 20px;
-    min-height: 200px; /* Asegura un mínimo de altura para las slides */
+    min-height: 200px; 
 }
 
 .slide p {
@@ -326,7 +326,7 @@ details p {
 
 .navigation {
     position: absolute;
-    bottom: 10px; /* Ajusta la posición para que esté fuera del área de las slides */
+    bottom: 10px; 
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -360,23 +360,23 @@ details p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh; /* Ajustar la altura según sea necesario */
+    min-height: 100vh; 
     display: flex;
-    flex-direction: column; /* Coloca los elementos en columna */
-    justify-content: center; /* Centra verticalmente los elementos */
-    align-items: flex-start; /* Alinea los elementos a la izquierda */
-    padding: 50px; /* Añade espacio interno para separar los elementos del borde */
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: flex-start; 
+    padding: 50px; 
 }
 
 .about-title {
-    text-align: left; /* Alinea el título a la izquierda */
-    margin-bottom: 20px; /* Espacio entre el título y el texto */
+    text-align: left; 
+    margin-bottom: 20px; 
 }
 
 .about-title p {
-    font-size: 38px; /* Tamaño del título */
-    font-weight: 700; /* Peso del título */
-    color: #f4f4f4; /* Color del título */
+    font-size: 38px; 
+    font-weight: 700; 
+    color: #f4f4f4; 
     text-transform: uppercase; /* Transformación a mayúsculas */
 }
 
