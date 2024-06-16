@@ -31,10 +31,18 @@ body {
     padding: 0 20px;
 }
 
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
 .logo {
     color: #f4f4f4;
     font-size: 25px;
     font-weight: 800;
+    margin-right: auto;
 }
 
 .icons {
@@ -52,14 +60,6 @@ body {
 .icons a:hover {
     color: #ce967b;
 }
-
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
 
 .panel {
     border: none;

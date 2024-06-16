@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/estiloShop.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">logo</a>
+            <div class="icons">
+                <a href="carrito.html"><i class="fas fa-shopping-cart"></i></a>
+                <a href="../index.html"><i class="fas fa-home"></i></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container text-center">
+            <h1>SHOP</h1>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <aside class="col-md-3">
+                    <section class="panel">
+                        <header class="panel-heading">
+                            Categories
+                        </header>
+                        <div class="panel-body">
+                            <ul class="nav prod-cat">
+                                <li><a href="#">Equipment</a></li>
+                                <li><a href="#">Coffee Blends</a></li>
+                                <li><a href="#">Instant Coffee</a></li>
+                                <li><a href="#">Green Coffee</a></li>
+                                <li><a href="#">Decaf</a></li>
+                                <li><a href="#">Seasonal</a></li>
+                                <li><a href="#">Cold Brew</a></li>
+                            </ul>
+                        </div>
+                    </section>
+                </aside>
+                <div class="col-md-9">
+                    <div class="row product-list">
+                        <!-- Aquí se cargarán los productos -->
+                    </div>
+                    <!-- Paginación -->
+                    <div class="text-center">
+                        <ul class="pagination">
+                            <li class="page-item"><a href="#" class="page-link" data-page="prev">&laquo;</a></li>
+                            <li class="page-item active"><a href="#" class="page-link" data-page="1">1</a></li>
+                            <li class="page-item"><a href="#" class="page-link" data-page="2">2</a></li>
+                            <li class="page-item"><a href="#" class="page-link" data-page="3">3</a></li>
+                            <li class="page-item"><a href="#" class="page-link" data-page="4">4</a></li>
+                            <li class="page-item"><a href="#" class="page-link" data-page="5">5</a></li>
+                            <li class="page-item"><a href="#" class="page-link" data-page="next">&raquo;</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
