@@ -39,8 +39,8 @@
                                     <th class="text-center align-middle py-3 px-0" style="width: 40px;"><a href="#" class="shop-tooltip float-none text-light" title="Clear cart"><i class="fas fa-trash"></i></a></th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr>
+                            <tbody id="cart-items">
+                                <tr data-id="1">
                                     <td class="p-4">
                                         <div class="media align-items-center">
                                             <img src="../assets/images/c2.png" class="d-block ui-w-40 ui-bordered mr-4" alt="Product Image">
@@ -54,11 +54,11 @@
                                         </div>
                                     </td>
                                     <td class="text-right font-weight-semibold align-middle p-4">$17.60</td>
-                                    <td class="align-middle p-4"><input type="number" class="form-control text-center" value="1"></td>
-                                    <td class="text-right font-weight-semibold align-middle p-4">$17.60</td>
-                                    <td class="text-center align-middle px-0"><a href="#" class="shop-tooltip close float-none text-danger" title="Remove">×</a></td>
+                                    <td class="align-middle p-4"><input type="number" class="form-control text-center quantity" value="1"></td>
+                                    <td class="text-right font-weight-semibold align-middle p-4 item-total">$17.60</td>
+                                    <td class="text-center align-middle px-0"><a href="#" class="shop-tooltip close float-none text-danger remove-item" title="Remove">×</a></td>
                                 </tr>
-                                <tr>
+                                <tr data-id="2">
                                     <td class="p-4">
                                         <div class="media align-items-center">
                                             <img src="../assets/images/c1.png" class="d-block ui-w-40 ui-bordered mr-4" alt="Product Image">
@@ -72,11 +72,11 @@
                                         </div>
                                     </td>
                                     <td class="text-right font-weight-semibold align-middle p-4">$35.99</td>
-                                    <td class="align-middle p-4"><input type="number" class="form-control text-center" value="2"></td>
-                                    <td class="text-right font-weight-semibold align-middle p-4">$71.98</td>
-                                    <td class="text-center align-middle px-0"><a href="#" class="shop-tooltip close float-none text-danger" title="Remove">×</a></td>
+                                    <td class="align-middle p-4"><input type="number" class="form-control text-center quantity" value="2"></td>
+                                    <td class="text-right font-weight-semibold align-middle p-4 item-total">$71.98</td>
+                                    <td class="text-center align-middle px-0"><a href="#" class="shop-tooltip close float-none text-danger remove-item" title="Remove">×</a></td>
                                 </tr>
-                                <tr>
+                                <tr data-id="3">
                                     <td class="p-4">
                                         <div class="media align-items-center">
                                             <img src="../assets/images/c3.png" class="d-block ui-w-40 ui-bordered mr-4" alt="Product Image">
@@ -90,9 +90,9 @@
                                         </div>
                                     </td>
                                     <td class="text-right font-weight-semibold align-middle p-4">$25.99</td>
-                                    <td class="align-middle p-4"><input type="number" class="form-control text-center" value="1"></td>
-                                    <td class="text-right font-weight-semibold align-middle p-4">$25.99</td>
-                                    <td class="text-center align-middle px-0"><a href="#" class="shop-tooltip close float-none text-danger" title="Remove">×</a></td>
+                                    <td class="align-middle p-4"><input type="number" class="form-control text-center quantity" value="1"></td>
+                                    <td class="text-right font-weight-semibold align-middle p-4 item-total">$25.99</td>
+                                    <td class="text-center align-middle px-0"><a href="#" class="shop-tooltip close float-none text-danger remove-item" title="Remove">×</a></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -103,7 +103,7 @@
                         <div class="d-flex ml-auto">
                             <div class="text-right mt-4">
                                 <label class="text-muted font-weight-normal m-0">Total price</label>
-                                <div class="text-large"><strong>$1164.65</strong></div>
+                                <div class="text-large"><strong id="total-price">$115.57</strong></div>
                             </div>
                         </div>
                     </div>
@@ -119,5 +119,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="../js/carrito.js"></script>
 </body>
 </html>
+
