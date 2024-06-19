@@ -36,7 +36,7 @@ function renderProducts(page) {
                         <a href="#" class="adtocart" data-id="${product.id}" data-name="${product.name}" data-price="${product.price}" data-img="${product.img}"><i class="fa fa-shopping-cart"></i></a>
                     </div>
                     <div class="panel-body text-center">
-                        <h4><a href="producto.html" class="pro-title">${product.name}</a></h4>
+                        <h4><a href="producto.html?id=${product.id}" class="pro-title">${product.name}</a></h4>
                         <p class="price">$${product.price.toFixed(2)}</p>
                     </div>
                 </section>
@@ -62,6 +62,12 @@ function renderProducts(page) {
         });
     });
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    renderProducts(currentPage);
+    setupPagination();
+});
+
 
 function setupPagination() {
     const paginationLinks = document.querySelectorAll('.page-link');
