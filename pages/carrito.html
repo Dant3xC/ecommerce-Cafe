@@ -17,6 +17,7 @@
             <div class="icons">
                 <a href="shop.html"><i class="fas fa-search"></i></a>
                 <a href="../index.html"><i class="fas fa-home"></i></a>
+                <div id="auth-container"></div> <!-- Contenedor para el botón de autenticación -->
             </div>
         </div>
     </header>
@@ -32,14 +33,12 @@
                         <table class="table table-bordered m-0">
                             <thead>
                                 <tr>
-                                    <th class="text-center py-3 px-4" style="min-width: 400px;">Product Name &amp;
-                                        Details</th>
+                                    <th class="text-center py-3 px-4" style="min-width: 400px;">Product Name &amp; Details</th>
                                     <th class="text-right py-3 px-4" style="width: 100px;">Price</th>
                                     <th class="text-center py-3 px-4" style="width: 120px;">Quantity</th>
                                     <th class="text-right py-3 px-4" style="width: 100px;">Total</th>
                                     <th class="text-center align-middle py-3 px-0" style="width: 40px;">
-                                        <a href="#" id="clear-cart" class="shop-tooltip float-none text-light"
-                                            title="Clear cart"><i class="fas fa-trash"></i></a>
+                                        <a href="#" id="clear-cart" class="shop-tooltip float-none text-light" title="Clear cart"><i class="fas fa-trash"></i></a>
                                     </th>
                                 </tr>
                             </thead>
@@ -55,19 +54,81 @@
                         </div>
                     </div>
                     <div class="float-right">
-                        <button type="button" class="btn btn-lg btn-default md-btn-flat mt-2 mr-3">Back to
-                            shopping</button>
-                        <button type="button" class="btn btn-lg btn-primary mt-2 custom-btn">Checkout</button>
+                        <button type="button" class="btn btn-lg btn-default md-btn-flat mt-2 mr-3" id="back-to-shopping">Back to shopping</button>
+                        <button type="button" class="btn btn-lg btn-primary mt-2 custom-btn" id="checkout-button">Checkout</button>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <!-- Modal -->
+    <div class="modal fade" id="checkoutModal" tabindex="-1" role="dialog" aria-labelledby="checkoutModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="checkoutModalLabel">Checkout</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="checkout-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="document-number">Document</label>
+                            <input type="text" class="form-control" id="document-number" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="delivery">Delivery Method</label>
+                            <select class="form-control" id="delivery" required>
+                                <option value="pickup">Pick up</option>
+                                <option value="delivery">Delivery</option>
+                            </select>
+                        </div>
+                        <div id="delivery-details" style="display: none;">
+                            <div class="form-group">
+                                <label for="delivery-address">Address</label>
+                                <input type="text" class="form-control" id="delivery-address">
+                            </div>
+                            <div class="form-group">
+                                <label for="delivery-city">City</label>
+                                <input type="text" class="form-control" id="delivery-city">
+                            </div>
+                            <h5>Payment Details</h5>
+                            <div class="form-group">
+                                <label for="card-number">Card Number</label>
+                                <input type="text" class="form-control" id="card-number">
+                            </div>
+                            <div class="form-group">
+                                <label for="expiry-date">Expiry Date</label>
+                                <input type="text" class="form-control" id="expiry-date" placeholder="MM/YY">
+                            </div>
+                            <div class="form-group">
+                                <label for="cvv">CVV</label>
+                                <input type="text" class="form-control" id="cvv">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="../js/carrito.js"></script>
+    <script src="../js/checkout.js"></script>
+    <script src="../js/login.js"></script>
 </body>
 
 </html>

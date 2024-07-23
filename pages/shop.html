@@ -15,10 +15,11 @@
             <div class="icons">
                 <a href="carrito.html"><i class="fas fa-shopping-cart"></i></a>
                 <a href="../index.html"><i class="fas fa-home"></i></a>
+                <div id="auth-container"></div> <!-- Contenedor para el botón de autenticación -->
             </div>
         </div>
     </header>
-    <main>
+    <main class="main">
         <div class="container text-center">
             <h1>SHOP</h1>
         </div>
@@ -31,18 +32,24 @@
                         </header>
                         <div class="panel-body">
                             <ul class="nav prod-cat">
-                                <li><a href="#">Equipment</a></li>
-                                <li><a href="#">Coffee Blends</a></li>
-                                <li><a href="#">Instant Coffee</a></li>
-                                <li><a href="#">Green Coffee</a></li>
-                                <li><a href="#">Decaf</a></li>
-                                <li><a href="#">Seasonal</a></li>
-                                <li><a href="#">Cold Brew</a></li>
+                                <li><a href="#" class="category-link" data-category="all">All Products</a></li>
+                                <li><a href="#" class="category-link" data-category="Equipment">Equipment</a></li>
+                                <li><a href="#" class="category-link" data-category="Coffee Blends">Coffee Blends</a></li>
+                                <li><a href="#" class="category-link" data-category="Instant Coffee">Instant Coffee</a></li>
+                                <li><a href="#" class="category-link" data-category="Green Coffee">Green Coffee</a></li>
+                                <li><a href="#" class="category-link" data-category="Decaf">Decaf</a></li>
+                                <li><a href="#" class="category-link" data-category="Seasonal">Seasonal</a></li>
+                                <li><a href="#" class="category-link" data-category="Cold Brew">Cold Brew</a></li>
                             </ul>
                         </div>
                     </section>
                 </aside>
                 <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <input type="text" id="search-input" class="form-control" placeholder="Search products...">
+                        </div>
+                    </div>
                     <div class="row product-list">
                         <!-- Aquí se cargarán los productos -->
                     </div>

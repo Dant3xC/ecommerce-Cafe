@@ -1,3 +1,4 @@
+/* Estilos existentes */
 @import url('https://fonts.googleapis.com/css2?family=Taviraj:wght@400;500;600;700;800&display=swap');
 
 * {
@@ -105,10 +106,15 @@ body {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Altura fija para todas las imágenes */
 }
 
 .pro-img-box img {
-    width: 100%;
+    width: auto; /* Ajusta el ancho automáticamente */
+    height: 100%; /* Asegura que la imagen llene el contenedor */
 }
 
 .adtocart {
@@ -130,7 +136,7 @@ body {
     font-size: 18px;
 }
 
-.pro-title:hover{
+.pro-title:hover {
     color: #f4f4f4;
 }
 
@@ -165,6 +171,23 @@ body {
 .pagination li.active a {
     background-color: #ce967b;
     color: #fff;
+}
+
+/* Estilos adicionales para el buscador */
+#search-input {
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #444;
+    background-color: #1e1e1e;
+    color: #f4f4f4;
+    border-radius: 5px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#search-input:focus {
+    border-color: #ce967b;
+    box-shadow: 0 0 5px rgba(206, 151, 123, 0.5);
 }
 
 @media (max-width: 768px) {

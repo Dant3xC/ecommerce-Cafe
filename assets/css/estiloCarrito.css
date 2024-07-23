@@ -37,27 +37,35 @@ body {
     font-weight: 800;
 }
 
-.icons {
-    display: flex;
-    gap: 15px;
-}
-
-.icons a {
-    color: #f4f4f4;
-    font-size: 18px;
-    padding: 10px;
-    transition: color 0.3s ease;
-}
-
-.icons a:hover {
-    color: #ce967b;
-}
-
+/* Contenedor de la cabecera */
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+}
+
+/* Estilos para los iconos y el contenedor de autenticación */
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icons a, .auth-button {
+    color: #f4f4f4;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s ease;
+    border-color: #a05e43;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center; /* Asegúrate de que el texto esté centrado */
+}
+
+/* Estilos para los botones al pasar el cursor */
+.icons a:hover, .auth-button:hover {
+    color: #a05e43;
 }
 
 .card {
@@ -196,4 +204,63 @@ input[type="number"] {
 /* Cambiar el color del texto en el input a blanco */
 input[type="number"]::placeholder {
     color: #f4f4f4;
+}
+
+/* Estilos del modal */
+.modal-content {
+    background-color: #1e1e1e; /* Fondo oscuro para el contenido del modal */
+    color: #f4f4f4; /* Color de texto claro */
+    border-radius: 10px; /* Esquinas redondeadas */
+    border: none; /* Sin borde */
+}
+
+.modal-header {
+    background-color: #2b2b2b; /* Fondo más oscuro para el encabezado del modal */
+    border-bottom: 1px solid #444; /* Borde inferior */
+}
+
+.modal-header .modal-title {
+    color: #f4f4f4; /* Color de texto claro para el título */
+}
+
+.modal-header .close {
+    color: #f4f4f4; /* Color de texto claro para el botón de cierre */
+}
+
+.modal-body {
+    background-color: #1e1e1e; /* Fondo oscuro para el cuerpo del modal */
+    color: #f4f4f4; /* Color de texto claro */
+}
+
+.form-control {
+    background-color: #2b2b2b; /* Fondo oscuro para los campos del formulario */
+    border: 1px solid #444; /* Borde oscuro */
+    color: #f4f4f4; /* Color de texto claro */
+}
+
+.form-control::placeholder {
+    color: #c5c5c5; /* Color de placeholder */
+}
+
+.form-control:focus {
+    background-color: #2b2b2b; /* Fondo oscuro cuando se enfoca */
+    border-color: #ce977b; /* Color de borde cuando se enfoca */
+    color: #f4f4f4; /* Color de texto claro cuando se enfoca */
+}
+
+.modal-footer {
+    background-color: #2b2b2b; /* Fondo oscuro para el pie del modal */
+    border-top: 1px solid #444; /* Borde superior */
+}
+
+.modal-footer .btn {
+    background-color: #ce977b; /* Botones con fondo naranja */
+    border-color: #ce977b; /* Borde de los botones */
+    color: #1e1e1e; /* Color de texto oscuro */
+}
+
+.modal-footer .btn:hover {
+    background-color: #a05e3b; /* Fondo de los botones al pasar el ratón */
+    border-color: #a05e3b; /* Borde de los botones al pasar el ratón */
+    color: #f4f4f4; /* Color de texto claro al pasar el ratón */
 }
